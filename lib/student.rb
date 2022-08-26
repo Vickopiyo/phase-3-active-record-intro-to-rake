@@ -1,3 +1,11 @@
+# namespace :db do 
+#   desc "migrate changes to your database"
+#   task migrate: :environment do
+#     Student.create_table  
+#   end
+
+
+
 class Student
 
   # Remember, you can access your database connection anywhere in this class
@@ -48,5 +56,9 @@ class Student
     sql = "SELECT * FROM students" 
     DB[:conn].execute(sql)
   end
+    
+ 
 
-end
+  
+  end
+  
